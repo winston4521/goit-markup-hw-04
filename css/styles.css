@@ -133,13 +133,19 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--paragraf-color);
-
-  display: block;
+  display: flex;
+  align-items: baseline;
 }
 
 .top-contact:hover,
 .top-contact:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.mail,
+.phone {
+  margin-right: 10px;
 }
 
 /* hero-section */
@@ -149,8 +155,19 @@ p {
   align-items: center;
   padding-bottom: 200px;
   padding-top: 200px;
+}
+.first-sec.background {
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
 
-  background-color: var(--footer-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/decoration/hero.jpg);
+  background-color: tomato;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .main-title {
   font-weight: 900;
@@ -214,9 +231,23 @@ p {
 
 .adv-item {
   width: 270px;
+  display: block;
 }
 .adv-item:not(:last-child) {
   margin-right: 30px;
+}
+.devices {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  padding: 25px 102px;
+  margin-bottom: 30px;
+  display: flex;
+
+  border-radius: 4px;
+}
+.devices:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .advantages-title {
@@ -271,22 +302,78 @@ p {
   border-radius: 0px 0px 4px 4px;
 }
 
+.socials {
+  width: 206px;
+  height: 44px;
+  margin-right: 32px;
+  margin-left: 32px;
+  margin-bottom: 30px;
+  display: flex;
+}
+.icon-link {
+  width: 44px;
+  height: 44px;
+  fill: var(--white-color);
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.comapnies-item:not(:last-child) {
+  margin-right: 10px;
+}
+.icon-link {
+  fill: #afb1b8;
+}
+
+.icon-link:hover {
+  background-color: var(--accent-color);
+  fill: white;
+}
+
 .mbr-name {
   text-align: center;
   margin-bottom: 10px;
   margin-top: 30px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
 }
 .mbr-text {
   text-align: center;
-  padding-bottom: 30px;
-
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.2;
-  color: var(--paragraf-color);
+}
+/* Partners */
+.companies {
+  padding: 94px 215px;
+}
+
+.companies-list {
+  display: flex;
+  justify-content: center;
+}
+.companies-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.companies-link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  fill: #afb1b8;
+  border-radius: 4px;
+}
+.companies-link:hover,
+.companies-link:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* Footer */
@@ -296,6 +383,10 @@ p {
   padding: 60px 0px;
 }
 
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+}
 .main-adress {
   margin-top: 20px;
 
@@ -307,6 +398,7 @@ p {
 .bot-address-item:not(:last-child) {
   margin-bottom: 9px;
 }
+
 .street-link {
   color: rgba(255, 255, 255, 1);
 }
@@ -314,6 +406,27 @@ p {
 .bot-contact-link:hover,
 .bot-contact-link:focus {
   color: var(--accent-color);
+}
+
+/* Socials */
+.social-block {
+  margin-left: 70px;
+}
+
+.footer-socials {
+  display: flex;
+  margin-top: 20px;
+}
+.icon-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.socials-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--white-color);
 }
 
 /* portfolio title */
@@ -350,6 +463,11 @@ p {
 .galery-item {
   margin-right: 30px;
   margin-bottom: 30px;
+}
+.galery-item:hover,
+.galery-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .galery-item:nth-child(3n) {
