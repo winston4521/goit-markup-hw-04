@@ -57,7 +57,10 @@ p {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+/* ===============
 /* Header */
+/* ============= / */
+
 .header {
   background-color: var(--white-color);
   border-bottom: 1px solid var(--bgc-color-white);
@@ -148,7 +151,7 @@ p {
   margin-right: 10px;
 }
 
-/* hero-section */
+/* Рero-section */
 
 .first-sec {
   text-align: center;
