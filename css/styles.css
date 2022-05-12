@@ -130,6 +130,10 @@ p {
 }
 
 /* Contact */
+
+.contact-item {
+  align-items: baseline;
+}
 .top-contact {
   font-weight: 500;
   font-size: 14px;
@@ -138,7 +142,8 @@ p {
   color: var(--paragraf-color);
   fill: var(--paragraf-color);
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: center;
 }
 
 .mail,
