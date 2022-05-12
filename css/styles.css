@@ -136,19 +136,20 @@ p {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--paragraf-color);
+  fill: var(--paragraf-color);
   display: flex;
   align-items: baseline;
-}
-
-.top-contact:hover,
-.top-contact:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .mail,
 .phone {
   margin-right: 10px;
+}
+
+.top-contact:hover,
+.top-contact:focus {
+  fill: var(--accent-color);
+  color: var(--accent-color);
 }
 
 /* Рero-section */
@@ -246,14 +247,11 @@ p {
   width: 270px;
   height: 120px;
   background-color: #f5f4fa;
-  padding: 25px 102px;
   margin-bottom: 30px;
   display: flex;
-
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
-}
-.devices:hover {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .advantages-title {
@@ -333,7 +331,8 @@ p {
   fill: #afb1b8;
 }
 
-.icon-link:hover {
+.icon-link:hover,
+.icon-link:focus {
   background-color: var(--accent-color);
   fill: white;
 }
@@ -351,6 +350,7 @@ p {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.2;
+  color: var(--paragraf-color);
 }
 /* Partners */
 .companies {
@@ -426,7 +426,9 @@ p {
 .icon-link {
   background: rgba(255, 255, 255, 0.1);
 }
-
+.fticon {
+  fill: var(--white-color);
+}
 .socials-title {
   font-size: 14px;
   line-height: 1.14;
